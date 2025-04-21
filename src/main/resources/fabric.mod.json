@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "piston_sound_mod",
+  "version": "${version}",
+  "name": "PistonSoundMod",
+  "description": "A mod that extends piston sound range back to its original value",
+  "authors": ["Mopsy"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "piston_sound_mod.png",
+  "environment": "client",
+  "mixins": [
+    "piston_sound_mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

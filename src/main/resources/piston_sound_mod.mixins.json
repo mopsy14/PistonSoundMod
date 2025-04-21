@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "mopsy.productions.piston_sound_mod.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ClientPlayNetworkHandlerMixin",
+    "PistonBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

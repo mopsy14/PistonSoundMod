@@ -1,0 +1,22 @@
+{
+  "block.piston.contract": {
+    "sounds": [
+      {
+        "attenuation_distance": 16,
+        "name": "tile/piston/in"
+      }
+    ],
+    "subtitle": "subtitles.block.piston.move",
+    "replace": true
+  },
+  "block.piston.extend": {
+    "sounds": [
+      {
+        "attenuation_distance": 16,
+        "name": "tile/piston/out"
+      }
+    ],
+    "subtitle": "subtitles.block.piston.move",
+    "replace": true
+  }
+}
