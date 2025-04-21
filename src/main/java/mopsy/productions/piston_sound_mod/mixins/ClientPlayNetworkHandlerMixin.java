@@ -12,8 +12,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class ClientPlayNetworkHandlerMixin {
     @Inject(method = "onPlaySound",at = @At("HEAD"), cancellable = true)
     private void onSoundReceived(PlaySoundS2CPacket packet, CallbackInfo ci){
-        if(packet.getSound().matchesId(SoundEvents.BLOCK_PISTON_EXTEND.id())||
-                packet.getSound().matchesId(SoundEvents.BLOCK_PISTON_CONTRACT.id()))
+        if(packet.getSound().value() == SoundEvents.BLOCK_PISTON_EXTEND||
+                packet.getSound().value() == SoundEvents.BLOCK_PISTON_CONTRACT)
             ci.cancel();
     }
 }
